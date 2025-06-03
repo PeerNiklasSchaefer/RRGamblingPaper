@@ -1,3 +1,7 @@
+Group members:
+- Lukas Göbl (Ilias: lgoebl1)
+- Peer Niklas Schäfer (Ilias: pschae20)
+
 # Why Are Roulette Tables Green? (Fake Paper)
 ---
 ### The Effect of Background Color on Risk-Taking in Decision-Making Tasks
