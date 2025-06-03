@@ -3,9 +3,10 @@
 # Variables
 ENV_NAME = gamble_paper_env
 NOTEBOOK = paper.ipynb
+HTML = paper.html
 
 # Default target: setup and run Jupyter Notebook
-all: setup notebook
+all: setup html notebook
 
 # Setup Conda environment and install requirements
 setup:
@@ -17,6 +18,10 @@ setup:
 notebook:
 	conda activate $(ENV_NAME) && \
 	jupyter notebook $(NOTEBOOK)
+	
+# Convert notebook to HTML
+html:
+	conda activate $(ENV_NAME) && jupyter nbconvert --to html $(NOTEBOOK) --output $(HTML)
 
 # Remove Conda environment
 distclean:
