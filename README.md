@@ -23,12 +23,13 @@ This command will create a virtual environment (if not already present) and inst
 ```bash
 make notebook
 ```
-You may also regenerate the HTML file using the followingcommand and compare it to the original:
+You may also regenerate the HTML file using the following command and compare it to the original:
 
 ```bash 
 make html
 ``` 
 
+This command produces "paper.html". You can compare this version to our original version "original_paper.html".
 
 This approach guarantees that everyone working with the notebook uses the exact same package versions, minimizing environment-related issues and maximizing reproducibility.
 
